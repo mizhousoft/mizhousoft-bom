@@ -38,23 +38,13 @@
 	</scm>
 
 	<distributionManagement>
-		<repository>
-			<id>mizhousoft-mizhousoft-release</id>
-			<name>release</name>
-			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/release/</url>
-		</repository>
 		<snapshotRepository>
-			<id>mizhousoft-mizhousoft-snapshot</id>
-			<name>snapshot</name>
-			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/snapshot/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<properties>
-		<site.deploy.url></site.deploy.url>
-		<distribution.repository.url></distribution.repository.url>
-		<distribution.site.url></distribution.site.url>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.sourceEncoding>UTF-8</project.reporting.sourceEncoding>
 
@@ -596,6 +586,47 @@
 							WEB-INF/classes/javac.sh,
 							WEB-INF/classes/org.codehaus.plexus.compiler.javac*
 						</packagingExcludes>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>3.2.0</version>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+							<configuration>
+								<additionalparam>-Xdoclint:none</additionalparam>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-gpg-plugin</artifactId>
+					<version>1.6</version>
+					<executions>
+						<execution>
+							<id>sign-artifacts</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>sign</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.sonatype.plugins</groupId>
+					<artifactId>nexus-staging-maven-plugin</artifactId>
+					<version>1.6.8</version>
+					<extensions>true</extensions>
+					<configuration>
+						<serverId>ossrh</serverId>
+						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
 				</plugin>
 				<plugin>
