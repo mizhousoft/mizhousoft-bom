@@ -4,11 +4,12 @@
 
 	<groupId>com.mizhousoft</groupId>
 	<artifactId>mizhousoft</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>Mizhou Software POM</name>
 	<description>Mizhou Software POM</description>
+	<url>https://mizhousoft.com</url>
 
 	<organization>
 		<name>Shenzhen Mizhou Technology Co., Ltd.</name>
@@ -38,6 +39,10 @@
 	</scm>
 
 	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+		</repository>
 		<snapshotRepository>
 			<id>ossrh</id>
 			<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
@@ -49,14 +54,7 @@
 		<project.reporting.sourceEncoding>UTF-8</project.reporting.sourceEncoding>
 
 		<jdk.version>1.8</jdk.version>
-		<maven.version>3.5.0</maven.version>
-		<maven.enforcer.version>3.0.0-M3</maven.enforcer.version>
-		<maven.jar.version>3.2.0</maven.jar.version>
-		<maven.war.version>3.3.1</maven.war.version>
-		<maven.surefire.version>2.22.2</maven.surefire.version>
-		<maven.site.version>3.9.1</maven.site.version>
-		<maven.project.info.verison>3.1.1</maven.project.info.verison>
-		<maven.source.version>3.2.1</maven.source.version>
+		<maven.version>3.6.0</maven.version>
 
 		<shiro.version>1.7.1</shiro.version>
 		<poi.version>4.1.2</poi.version>
@@ -484,31 +482,7 @@
 	<build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
 		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>${maven.enforcer.version}</version>
-					<executions>
-						<execution>
-							<id>enforce-versions</id>
-							<goals>
-								<goal>enforce</goal>
-							</goals>
-							<inherited>true</inherited>
-							<configuration>
-								<rules>
-									<requireJavaVersion>
-										<version>[${jdk.version},)</version>
-									</requireJavaVersion>
-									<requireMavenVersion>
-										<version>[${maven.version},)</version>
-									</requireMavenVersion>
-								</rules>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
+			<plugins>				
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-antrun-plugin</artifactId>
@@ -528,107 +502,7 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.2.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
-					<configuration>
-						<source>${jdk.version}</source>
-						<target>${jdk.version}</target>
-						<encoding>${project.build.sourceEncoding}</encoding>
-						<showDeprecation>true</showDeprecation>
-						<showWarnings>true</showWarnings>
-						<fork>true</fork>
-						<meminitial>256m</meminitial>
-						<maxmem>384m</maxmem>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jar-plugin</artifactId>
-					<version>${maven.jar.version}</version>
-					<configuration>
-						<excludes>
-							<exclude>javac.bat</exclude>
-							<exclude>javac.sh</exclude>
-							<exclude>org.codehaus.plexus.compiler.javac*</exclude>
-						</excludes>
-						<archive>
-							<manifest>
-								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-							</manifest>
-						</archive>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>${maven.source.version}</version>
-					<executions>
-						<execution>
-							<id>attach-sources</id>
-							<phase>install</phase>
-							<goals>
-								<goal>jar</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>${maven.war.version}</version>
-					<configuration>
-						<packagingExcludes>
-							WEB-INF/classes/javac.bat,
-							WEB-INF/classes/javac.sh,
-							WEB-INF/classes/org.codehaus.plexus.compiler.javac*
-						</packagingExcludes>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.2.0</version>
-					<executions>
-						<execution>
-							<id>attach-javadocs</id>
-							<goals>
-								<goal>jar</goal>
-							</goals>
-							<configuration>
-								<additionalparam>-Xdoclint:none</additionalparam>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-gpg-plugin</artifactId>
-					<version>1.6</version>
-					<executions>
-						<execution>
-							<id>sign-artifacts</id>
-							<phase>verify</phase>
-							<goals>
-								<goal>sign</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.sonatype.plugins</groupId>
-					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.6.8</version>
-					<extensions>true</extensions>
-					<configuration>
-						<serverId>ossrh</serverId>
-						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-						<autoReleaseAfterClose>true</autoReleaseAfterClose>
-					</configuration>
-				</plugin>
+				</plugin>				
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-install-plugin</artifactId>
@@ -697,7 +571,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>${maven.surefire.version}</version>
+					<version>2.22.2</version>
 					<configuration>
 						<skipTests>true</skipTests>
 					</configuration>
@@ -705,12 +579,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>${maven.project.info.verison}</version>
+					<version>3.1.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-site-plugin</artifactId>
-					<version>${maven.site.version}</version>
+					<version>3.9.1</version>
 					<configuration>
 						<locales>zh_CN</locales>
 					</configuration>
@@ -783,18 +657,130 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+					<fork>true</fork>
+					<meminitial>256m</meminitial>
+					<maxmem>384m</maxmem>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<excludes>
+						<exclude>javac.bat</exclude>
+						<exclude>javac.sh</exclude>
+						<exclude>org.codehaus.plexus.compiler.javac*</exclude>
+					</excludes>
 					<archive>
 						<manifestEntries>
 							<Built-By>mizhousoft</Built-By>
 						</manifestEntries>
+						<manifest>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
 					</archive>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>install</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<packagingExcludes>
+						WEB-INF/classes/javac.bat,
+						WEB-INF/classes/javac.sh,
+						WEB-INF/classes/org.codehaus.plexus.compiler.javac*
+					</packagingExcludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>false</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<inherited>true</inherited>
+						<configuration>
+							<rules>
+								<requireJavaVersion>
+									<version>[${jdk.version},)</version>
+								</requireJavaVersion>
+								<requireMavenVersion>
+									<version>[${maven.version},)</version>
+								</requireMavenVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -804,10 +790,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -816,7 +798,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>${maven.project.info.verison}</version>
+				<version>3.1.1</version>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -869,7 +851,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>${maven.surefire.version}</version>
+						<version>2.22.2</version>
 						<configuration>
 							<skipTests>false</skipTests>
 							<testFailureIgnore>true</testFailureIgnore>
