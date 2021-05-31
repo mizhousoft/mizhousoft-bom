@@ -4,7 +4,7 @@
 
 	<groupId>com.mizhousoft</groupId>
 	<artifactId>mizhousoft</artifactId>
-	<version>1.0.6</version>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 
 	<name>Mizhou Software POM</name>
@@ -40,12 +40,14 @@
 
 	<distributionManagement>
 		<repository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+			<id>mizhousoft-mizhousoft-release</id>
+			<name>release</name>
+			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/release/</url>
 		</repository>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+			<id>mizhousoft-mizhousoft-snapshot</id>
+			<name>snapshot</name>
+			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -702,18 +704,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>false</autoReleaseAfterClose>
-					<skipNexusStagingDeployMojo>${maven.deploy.skip}</skipNexusStagingDeployMojo>
-				</configuration>
-			</plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
 				<version>3.0.0-M3</version>
@@ -776,25 +766,30 @@
 
 	<profiles>
 		<profile>
-			<id>maven-3</id>
-			<activation>
-				<file>
-					<exists>${basedir}</exists>
-				</file>
-			</activation>
+			<id>ossrh</id>
+			<distributionManagement>
+				<repository>
+					<id>ossrh</id>
+					<url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
+				</repository>
+				<snapshotRepository>
+					<id>ossrh</id>
+					<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+				</snapshotRepository>
+			</distributionManagement>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-site-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>attach-descriptor</id>
-								<goals>
-									<goal>attach-descriptor</goal>
-								</goals>
-							</execution>
-						</executions>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.7</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>false</autoReleaseAfterClose>
+							<skipNexusStagingDeployMojo>${maven.deploy.skip}</skipNexusStagingDeployMojo>
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
