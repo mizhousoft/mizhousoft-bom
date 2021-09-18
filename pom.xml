@@ -60,12 +60,12 @@
 
 		<maven.deploy.skip>false</maven.deploy.skip>
 
-		<shiro.version>1.7.1</shiro.version>
+		<shiro.version>1.8.0</shiro.version>
 		<poi.version>4.1.2</poi.version>
 		<spring.version>5.3.9</spring.version>
 		<spring.boot.version>2.4.10</spring.boot.version>
 		<log4j2.version>2.13.3</log4j2.version>
-		<easyexcel.version>2.2.10</easyexcel.version>
+		<easyexcel.version>2.2.11</easyexcel.version>
 	</properties>
 
 	<dependencyManagement>
