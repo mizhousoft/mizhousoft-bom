@@ -62,9 +62,9 @@
 
 		<shiro.version>1.8.0</shiro.version>
 		<poi.version>4.1.2</poi.version>
-		<spring.version>5.3.13</spring.version>
-		<spring.boot.version>2.5.7</spring.boot.version>
-		<log4j2.version>2.15.0</log4j2.version>
+		<spring.version>5.3.14</spring.version>
+		<spring.boot.version>2.5.8</spring.boot.version>
+		<log4j2.version>2.17.0</log4j2.version>
 		<easyexcel.version>3.0.5</easyexcel.version>
 	</properties>
 
@@ -199,7 +199,7 @@
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpasyncclient</artifactId>
-				<version>4.1.4</version>
+				<version>4.1.5</version>
 			</dependency>
 			<!-- Spring framework Managed Dependencies -->
 			<dependency>
@@ -314,17 +314,17 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>2.12.5</version>
+				<version>2.12.6</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>2.12.5</version>
+				<version>2.12.6</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-annotations</artifactId>
-				<version>2.12.5</version>
+				<version>2.12.6</version>
 			</dependency>
 			<!-- JSP Managed Dependencies -->
 			<dependency>
@@ -352,12 +352,12 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.2.7</version>
+				<version>1.2.9</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.2.7</version>
+				<version>1.2.9</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
@@ -367,12 +367,12 @@
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
-				<version>1.2.78</version>
+				<version>1.2.79</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.71.Final</version>
+				<version>4.1.72.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
