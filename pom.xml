@@ -62,8 +62,8 @@
 
 		<shiro.version>1.9.0</shiro.version>
 		<poi.version>4.1.2</poi.version>
-		<spring.version>5.3.17</spring.version>
-		<spring.boot.version>2.5.11</spring.boot.version>
+		<spring.version>5.3.18</spring.version>
+		<spring.boot.version>2.5.12</spring.boot.version>
 		<log4j2.version>2.17.2</log4j2.version>
 		<easyexcel.version>3.0.5</easyexcel.version>
 	</properties>
@@ -319,7 +319,7 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>2.12.6</version>
+				<version>2.12.6.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
