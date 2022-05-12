@@ -62,8 +62,8 @@
 
 		<shiro.version>1.9.0</shiro.version>
 		<poi.version>4.1.2</poi.version>
-		<spring.version>5.3.18</spring.version>
-		<spring.boot.version>2.5.12</spring.boot.version>
+		<spring.version>5.3.19</spring.version>
+		<spring.boot.version>2.5.13</spring.boot.version>
 		<log4j2.version>2.17.2</log4j2.version>
 		<easyexcel.version>3.0.5</easyexcel.version>
 	</properties>
@@ -370,14 +370,9 @@
 				<version>2.3.31</version>
 			</dependency>
 			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>fastjson</artifactId>
-				<version>1.2.80</version>
-			</dependency>
-			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.75.Final</version>
+				<version>4.1.77.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -397,7 +392,7 @@
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
-				<version>8.0.28</version>
+				<version>8.0.29</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
@@ -427,7 +422,7 @@
 			<dependency>
 				<groupId>com.google.zxing</groupId>
 				<artifactId>javase</artifactId>
-				<version>3.4.1</version>
+				<version>3.5.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -442,17 +437,17 @@
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-api</artifactId>
-				<version>0.11.2</version>
+				<version>0.11.5</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-impl</artifactId>
-				<version>0.11.2</version>
+				<version>0.11.5</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-jackson</artifactId>
-				<version>0.11.2</version>
+				<version>0.11.5</version>
 			</dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
