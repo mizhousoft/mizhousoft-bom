@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mizhousoft</groupId>
@@ -55,7 +54,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.sourceEncoding>UTF-8</project.reporting.sourceEncoding>
 
-		<jdk.version>1.8</jdk.version>
+		<maven.compiler.release>11</maven.compiler.release>
+
 		<maven.version>3.6.0</maven.version>
 
 		<maven.deploy.skip>false</maven.deploy.skip>
@@ -65,7 +65,7 @@
 		<spring.version>5.3.20</spring.version>
 		<spring.boot.version>2.6.8</spring.boot.version>
 		<log4j2.version>2.17.2</log4j2.version>
-		<easyexcel.version>3.1.0</easyexcel.version>
+		<easyexcel.version>3.1.1</easyexcel.version>
 	</properties>
 
 	<dependencyManagement>
@@ -444,6 +444,21 @@
 				<artifactId>jjwt-jackson</artifactId>
 				<version>0.11.5</version>
 			</dependency>
+			<dependency>
+				<groupId>jakarta.annotation</groupId>
+				<artifactId>jakarta.annotation-api</artifactId>
+				<version>1.3.5</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>2.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-runtime</artifactId>
+				<version>2.3.1</version>
+			</dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -484,6 +499,9 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.2.0</version>
+					<configuration>
+						<propertiesEncoding>UTF-8</propertiesEncoding>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -586,8 +604,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.10.1</version>
 				<configuration>
-					<source>${jdk.version}</source>
-					<target>${jdk.version}</target>
 					<encoding>${project.build.sourceEncoding}</encoding>
 					<showDeprecation>true</showDeprecation>
 					<showWarnings>true</showWarnings>
@@ -664,9 +680,6 @@
 						<inherited>true</inherited>
 						<configuration>
 							<rules>
-								<requireJavaVersion>
-									<version>[${jdk.version},)</version>
-								</requireJavaVersion>
 								<requireMavenVersion>
 									<version>[${maven.version},)</version>
 								</requireMavenVersion>
