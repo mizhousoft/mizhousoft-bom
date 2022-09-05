@@ -61,9 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.9.1</shiro.version>
-		<poi.version>4.1.2</poi.version>
-		<spring.version>5.3.21</spring.version>
-		<spring.boot.version>2.6.9</spring.boot.version>
+		<spring.version>5.3.22</spring.version>
+		<spring.boot.version>2.6.11</spring.boot.version>
 		<log4j2.version>2.17.2</log4j2.version>
 		<easyexcel.version>3.1.1</easyexcel.version>
 	</properties>
@@ -155,21 +154,6 @@
 				<groupId>org.apache.shiro</groupId>
 				<artifactId>shiro-ehcache</artifactId>
 				<version>${shiro.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>poi</artifactId>
-				<version>${poi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>poi-ooxml</artifactId>
-				<version>${poi.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.poi</groupId>
-				<artifactId>poi-ooxml-schemas</artifactId>
-				<version>${poi.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
@@ -313,23 +297,38 @@
 			<dependency>
 				<groupId>org.hibernate.validator</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<version>6.2.3.Final</version>
+				<version>6.2.4.Final</version>
 			</dependency>
 			<!-- Thirdparty Managed Dependencies -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>2.13.3</version>
+				<version>2.13.4</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>2.13.3</version>
+				<version>2.13.4</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-annotations</artifactId>
-				<version>2.13.3</version>
+				<version>2.13.4</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.datatype</groupId>
+				<artifactId>jackson-datatype-jdk8</artifactId>
+				<version>2.13.4</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.datatype</groupId>
+				<artifactId>jackson-datatype-jsr310</artifactId>
+				<version>2.13.4</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-parameter-names</artifactId>
+				<version>2.13.4</version>
 			</dependency>
 			<!-- JSP Managed Dependencies -->
 			<dependency>
@@ -372,7 +371,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.78.Final</version>
+				<version>4.1.80.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -387,17 +386,17 @@
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
-				<version>8.0.29</version>
+				<version>8.0.30</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
-				<artifactId>bcprov-jdk15on</artifactId>
-				<version>1.70</version>
+				<artifactId>bcprov-jdk18on</artifactId>
+				<version>1.71.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
-				<artifactId>bcpkix-jdk15on</artifactId>
-				<version>1.70</version>
+				<artifactId>bcpkix-jdk18on</artifactId>
+				<version>1.71.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.quartz-scheduler</groupId>
@@ -425,9 +424,14 @@
 				<version>${easyexcel.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.deepoove</groupId>
+				<artifactId>poi-tl</artifactId>
+				<version>1.12.0</version>
+			</dependency>
+			<dependency>
 				<groupId>org.jsoup</groupId>
 				<artifactId>jsoup</artifactId>
-				<version>1.15.2</version>
+				<version>1.15.3</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
