@@ -61,8 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.9.1</shiro.version>
-		<spring.version>5.3.22</spring.version>
-		<spring.boot.version>2.6.11</spring.boot.version>
+		<spring.version>5.3.23</spring.version>
+		<spring.boot.version>2.6.12</spring.boot.version>
 		<log4j2.version>2.17.2</log4j2.version>
 		<easyexcel.version>3.1.1</easyexcel.version>
 	</properties>
@@ -297,7 +297,7 @@
 			<dependency>
 				<groupId>org.hibernate.validator</groupId>
 				<artifactId>hibernate-validator</artifactId>
-				<version>6.2.4.Final</version>
+				<version>6.2.5.Final</version>
 			</dependency>
 			<!-- Thirdparty Managed Dependencies -->
 			<dependency>
@@ -371,12 +371,12 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.80.Final</version>
+				<version>4.1.82.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
-				<version>3.5.10</version>
+				<version>3.5.11</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis.spring.boot</groupId>
