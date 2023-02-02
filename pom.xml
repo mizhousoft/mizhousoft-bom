@@ -293,6 +293,17 @@
 				<artifactId>spring-boot</artifactId>
 				<version>${spring.boot.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring.boot.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 			<!-- JBoss Managed Dependencies -->
 			<dependency>
 				<groupId>org.hibernate.validator</groupId>
@@ -465,10 +476,22 @@
 			</dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.13.2</version>
+        		<groupId>org.junit.jupiter</groupId>
+        		<artifactId>junit-jupiter</artifactId>
+        		<version>5.9.2</version>
+        		<scope>test</scope>
+    		</dependency>
+    		<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring.boot.version}</version>
 				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
@@ -569,12 +592,17 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.2</version>
-					<configuration>
+		            <artifactId>maven-surefire-plugin</artifactId>
+		            <version>3.0.0-M8</version>
+		            <configuration>
 						<skipTests>true</skipTests>
 					</configuration>
-				</plugin>
+		        </plugin>
+		        <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+		            <artifactId>maven-failsafe-plugin</artifactId>
+		            <version>3.0.0-M8</version>
+		        </plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
@@ -783,7 +811,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.22.2</version>
+            			<version>3.0.0-M8</version>
 						<configuration>
 							<skipTests>false</skipTests>
 							<testFailureIgnore>true</testFailureIgnore>
