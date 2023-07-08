@@ -54,7 +54,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.sourceEncoding>UTF-8</project.reporting.sourceEncoding>
 
-		<maven.compiler.release>11</maven.compiler.release>
+		<maven.compiler.release>17</maven.compiler.release>
 
 		<maven.version>3.6.0</maven.version>
 
