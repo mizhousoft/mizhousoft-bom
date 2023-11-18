@@ -179,16 +179,6 @@
 				<artifactId>log4j-flume-ng</artifactId>
 				<version>${log4j2.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.apache.httpcomponents.client5</groupId>
-				<artifactId>httpclient5</artifactId>
-				<version>5.2.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.httpcomponents.client5</groupId>
-				<artifactId>httpclient5-fluent</artifactId>
-				<version>5.2.1</version>
-			</dependency>
 			<!-- Spring framework Managed Dependencies -->
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -425,11 +415,6 @@
 				<version>5.0.1</version>
 			</dependency>
 			<dependency>
-				<groupId>com.squareup.okhttp3</groupId>
-				<artifactId>okhttp</artifactId>
-				<version>4.10.0</version>
-			</dependency>
-			<dependency>
 				<groupId>com.google.zxing</groupId>
 				<artifactId>javase</artifactId>
 				<version>3.5.2</version>
@@ -494,6 +479,16 @@
 				<artifactId>jsqlparser</artifactId>
 				<version>4.7</version>
 			</dependency>
+			<dependency>
+		        <groupId>com.konghq</groupId>
+		        <artifactId>unirest-java-core</artifactId>
+		        <version>4.2.0</version>
+		    </dependency>
+		    <dependency>
+		        <groupId>com.konghq</groupId>
+		        <artifactId>unirest-objectmapper-jackson</artifactId>
+		        <version>4.2.0</version>
+		    </dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
         		<groupId>org.junit.jupiter</groupId>
