@@ -455,21 +455,6 @@
 				<version>2.1.1</version>
 			</dependency>
 			<dependency>
-				<groupId>jakarta.xml.bind</groupId>
-				<artifactId>jakarta.xml.bind-api</artifactId>
-				<version>4.0.1</version>
-			</dependency>
-			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
-				<artifactId>jaxb-core</artifactId>
-				<version>4.0.3</version>
-			</dependency>
-			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
-				<artifactId>jaxb-runtime</artifactId>
-				<version>4.0.3</version>
-			</dependency>
-			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>32.1.3-jre</version>
@@ -489,6 +474,22 @@
 		        <artifactId>unirest-objectmapper-jackson</artifactId>
 		        <version>4.2.0</version>
 		    </dependency>
+			<!-- 兼容第三方SDK -->
+			<dependency>
+	            <groupId>javax.xml.bind</groupId>
+	            <artifactId>jaxb-api</artifactId>
+	            <version>2.3.1</version>
+	        </dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-core</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-impl</artifactId>
+				<version>2.3.2</version>
+			</dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
         		<groupId>org.junit.jupiter</groupId>
