@@ -458,12 +458,12 @@
 			<dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-java-core</artifactId>
-		        <version>4.2.0</version>
+		        <version>4.2.1</version>
 		    </dependency>
 		    <dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-objectmapper-jackson</artifactId>
-		        <version>4.2.0</version>
+		        <version>4.2.1</version>
 		    </dependency>
 			<!-- 兼容第三方SDK -->
 			<dependency>
