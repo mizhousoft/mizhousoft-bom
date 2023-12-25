@@ -61,8 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.0.14</spring.version>
-		<spring.boot.version>3.1.6</spring.boot.version>
+		<spring.version>6.0.15</spring.version>
+		<spring.boot.version>3.1.7</spring.boot.version>
 		<spring.shell.version>3.1.6</spring.shell.version>
 		<log4j2.version>2.20.0</log4j2.version>
 		<easyexcel.version>3.3.3</easyexcel.version>
@@ -347,12 +347,12 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.4.11</version>
+				<version>1.4.14</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.4.11</version>
+				<version>1.4.14</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
@@ -362,7 +362,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.101.Final</version>
+				<version>4.1.104.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -417,7 +417,7 @@
 			<dependency>
 				<groupId>org.jsoup</groupId>
 				<artifactId>jsoup</artifactId>
-				<version>1.16.2</version>
+				<version>1.17.1</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
@@ -452,12 +452,12 @@
 			<dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-java-core</artifactId>
-		        <version>4.2.1</version>
+		        <version>4.2.4</version>
 		    </dependency>
 		    <dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-objectmapper-jackson</artifactId>
-		        <version>4.2.1</version>
+		        <version>4.2.4</version>
 		    </dependency>
 			<!-- 兼容第三方SDK -->
 			<dependency>
@@ -594,7 +594,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 		            <artifactId>maven-surefire-plugin</artifactId>
-		            <version>3.2.2</version>
+		            <version>3.2.3</version>
 		            <configuration>
 						<skipTests>true</skipTests>
 					</configuration>
@@ -602,12 +602,12 @@
 		        <plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 		            <artifactId>maven-failsafe-plugin</artifactId>
-		            <version>3.2.2</version>
+		            <version>3.2.3</version>
 		        </plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>3.4.5</version>
+					<version>3.5.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -620,7 +620,7 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>versions-maven-plugin</artifactId>
-					<version>2.16.1</version>
+					<version>2.16.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
@@ -633,7 +633,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
+				<version>3.12.0</version>
 				<configuration>
 					<encoding>${project.build.sourceEncoding}</encoding>
 					<showDeprecation>true</showDeprecation>
@@ -723,7 +723,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.4.5</version>
+				<version>3.5.0</version>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -812,7 +812,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-            			<version>3.2.2</version>
+            			<version>3.2.3</version>
 						<configuration>
 							<skipTests>false</skipTests>
 							<testFailureIgnore>true</testFailureIgnore>
