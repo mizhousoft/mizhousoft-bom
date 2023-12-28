@@ -2,12 +2,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mizhousoft</groupId>
-	<artifactId>mizhousoft</artifactId>
+	<artifactId>mizhousoft-bom</artifactId>
 	<version>2.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Mizhou Software POM</name>
-	<description>Mizhou Software POM</description>
+	<name>Mizhou Software BOM</name>
+	<description>Mizhou Software BOM</description>
 	<url>https://mizhousoft.com</url>
 
 	<organization>
@@ -31,9 +31,9 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/mizhousoft/mizhousoft</url>
-		<connection>scm:git:https://github.com/mizhousoft/mizhousoft.git</connection>
-		<developerConnection>scm:git:https://github.com/mizhousoft/mizhousoft.git</developerConnection>
+		<url>https://github.com/mizhousoft/mizhousoft-bom</url>
+		<connection>scm:git:https://github.com/mizhousoft/mizhousoft-bom.git</connection>
+		<developerConnection>scm:git:https://github.com/mizhousoft/mizhousoft-bom.git</developerConnection>
 		<tag>v${project.version}</tag>
 	</scm>
 
@@ -447,7 +447,7 @@
 			<dependency>
 				<groupId>com.github.jsqlparser</groupId>
 				<artifactId>jsqlparser</artifactId>
-				<version>4.7</version>
+				<version>4.8</version>
 			</dependency>
 			<dependency>
 		        <groupId>com.konghq</groupId>
