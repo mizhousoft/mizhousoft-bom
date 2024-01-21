@@ -61,8 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.0.15</spring.version>
-		<spring.boot.version>3.1.7</spring.boot.version>
+		<spring.version>6.0.16</spring.version>
+		<spring.boot.version>3.1.8</spring.boot.version>
 		<spring.shell.version>3.1.7</spring.shell.version>
 		<log4j2.version>2.20.0</log4j2.version>
 		<easyexcel.version>3.3.3</easyexcel.version>
@@ -258,16 +258,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc-portlet</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web-portlet</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
 				<version>${spring.version}</version>
 				<scope>test</scope>
@@ -337,12 +327,12 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>2.0.9</version>
+				<version>2.0.11</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
-				<version>2.0.9</version>
+				<version>2.0.11</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
@@ -362,7 +352,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.104.Final</version>
+				<version>4.1.106.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -452,12 +442,12 @@
 			<dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-java-core</artifactId>
-		        <version>4.2.4</version>
+		        <version>4.2.7</version>
 		    </dependency>
 		    <dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-objectmapper-jackson</artifactId>
-		        <version>4.2.4</version>
+		        <version>4.2.7</version>
 		    </dependency>
 			<!-- 兼容第三方SDK -->
 			<dependency>
