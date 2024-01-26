@@ -403,6 +403,16 @@
 				<groupId>com.deepoove</groupId>
 				<artifactId>poi-tl</artifactId>
 				<version>1.12.2</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.poi</groupId>
+						<artifactId>poi-ooxml</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.jsoup</groupId>
