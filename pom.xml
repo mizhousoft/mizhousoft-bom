@@ -452,17 +452,17 @@
 			<dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-java-core</artifactId>
-		        <version>4.2.7</version>
+		        <version>4.2.9</version>
 		    </dependency>
 		    <dependency>
 		        <groupId>com.konghq</groupId>
 		        <artifactId>unirest-objectmapper-jackson</artifactId>
-		        <version>4.2.7</version>
+		        <version>4.2.9</version>
 		    </dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
 				<artifactId>pushy</artifactId>
-				<version>0.15.3</version>
+				<version>0.15.4</version>
 			</dependency>
 			<!-- 兼容第三方SDK -->
 			<dependency>
