@@ -61,11 +61,11 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.1.4</spring.version>
-		<spring.boot.version>3.2.3</spring.boot.version>
-		<spring.shell.version>3.2.2</spring.shell.version>
+		<spring.version>6.1.5</spring.version>
+		<spring.boot.version>3.2.4</spring.boot.version>
+		<spring.shell.version>3.2.3</spring.shell.version>
 		<log4j2.version>2.21.1</log4j2.version>
-		<easyexcel.version>3.3.3</easyexcel.version>
+		<easyexcel.version>3.3.4</easyexcel.version>
 	</properties>
 
 	<dependencyManagement>
@@ -450,15 +450,15 @@
 				<version>4.9</version>
 			</dependency>
 			<dependency>
-		        <groupId>com.konghq</groupId>
-		        <artifactId>unirest-java-core</artifactId>
-		        <version>4.2.9</version>
-		    </dependency>
+				<groupId>com.konghq</groupId>
+				<artifactId>unirest-java-core</artifactId>
+				<version>4.3.0</version>
+			</dependency>
 		    <dependency>
-		        <groupId>com.konghq</groupId>
-		        <artifactId>unirest-objectmapper-jackson</artifactId>
-		        <version>4.2.9</version>
-		    </dependency>
+				<groupId>com.konghq</groupId>
+				<artifactId>unirest-modules-jackson</artifactId>
+				<version>4.3.0</version>
+			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
 				<artifactId>pushy</artifactId>
