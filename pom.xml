@@ -452,12 +452,12 @@
 			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
-				<version>4.3.2</version>
+				<version>4.4.0</version>
 			</dependency>
 		    <dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-modules-jackson</artifactId>
-				<version>4.3.2</version>
+				<version>4.4.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
