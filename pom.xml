@@ -61,8 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.1.10</spring.version>
-		<spring.boot.version>3.2.7</spring.boot.version>
+		<spring.version>6.1.11</spring.version>
+		<spring.boot.version>3.2.8</spring.boot.version>
 		<spring.shell.version>3.2.6</spring.shell.version>
 		<log4j2.version>2.21.1</log4j2.version>
 		<easyexcel.version>4.0.1</easyexcel.version>
@@ -489,7 +489,7 @@
 			<dependency>
         		<groupId>org.junit.jupiter</groupId>
         		<artifactId>junit-jupiter</artifactId>
-        		<version>5.10.2</version>
+        		<version>5.10.3</version>
         		<scope>test</scope>
     		</dependency>
     		<dependency>
