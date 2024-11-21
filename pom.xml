@@ -3,7 +3,7 @@
 
 	<groupId>com.mizhousoft</groupId>
 	<artifactId>mizhousoft-bom</artifactId>
-	<version>2.0.4-SNAPSHOT</version>
+	<version>2.0.4</version>
 	<packaging>pom</packaging>
 
 	<name>Mizhou Software BOM</name>
@@ -56,13 +56,13 @@
 
 		<maven.compiler.release>17</maven.compiler.release>
 
-		<maven.version>3.8.0</maven.version>
+		<maven.version>3.9.0</maven.version>
 
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.1.14</spring.version>
-		<spring.boot.version>3.2.11</spring.boot.version>
+		<spring.version>6.1.15</spring.version>
+		<spring.boot.version>3.2.12</spring.boot.version>
 		<spring.shell.version>3.2.8</spring.shell.version>
 		<log4j2.version>2.21.1</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
@@ -74,7 +74,7 @@
 			<dependency>
 				<groupId>org.apache.ant</groupId>
 				<artifactId>ant</artifactId>
-				<version>1.10.14</version>
+				<version>1.10.15</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -352,7 +352,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.114.Final</version>
+				<version>4.1.115.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -457,12 +457,12 @@
 			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
-				<version>4.4.4</version>
+				<version>4.4.5</version>
 			</dependency>
 		    <dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-modules-jackson</artifactId>
-				<version>4.4.4</version>
+				<version>4.4.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
