@@ -3,7 +3,7 @@
 
 	<groupId>com.mizhousoft</groupId>
 	<artifactId>mizhousoft-bom</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<version>2.1.0</version>
 	<packaging>pom</packaging>
 
 	<name>Mizhou Software BOM</name>
@@ -61,9 +61,9 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>1.13.0</shiro.version>
-		<spring.version>6.1.15</spring.version>
-		<spring.boot.version>3.3.6</spring.boot.version>
-		<spring.shell.version>3.3.3</spring.shell.version>
+		<spring.version>6.1.16</spring.version>
+		<spring.boot.version>3.3.7</spring.boot.version>
+		<spring.shell.version>3.3.4</spring.shell.version>
 		<log4j2.version>2.23.1</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
 	</properties>
@@ -352,7 +352,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.115.Final</version>
+				<version>4.1.116.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
