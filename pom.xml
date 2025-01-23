@@ -62,7 +62,7 @@
 
 		<shiro.version>2.0.2</shiro.version>
 		<spring.version>6.1.16</spring.version>
-		<spring.boot.version>3.3.7</spring.boot.version>
+		<spring.boot.version>3.3.8</spring.boot.version>
 		<spring.shell.version>3.3.4</spring.shell.version>
 		<log4j2.version>2.23.1</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
@@ -89,11 +89,6 @@
 				<version>3.17.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-collections4</artifactId>
-				<version>4.4</version>
-			</dependency>
-			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
 				<version>2.18.0</version>
@@ -106,7 +101,7 @@
 			<dependency>
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
-				<version>1.17.1</version>
+				<version>1.17.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -116,7 +111,7 @@
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-csv</artifactId>
-				<version>1.12.0</version>
+				<version>1.13.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -126,7 +121,7 @@
 			<dependency>
 				<groupId>org.apache.pdfbox</groupId>
 				<artifactId>pdfbox</artifactId>
-				<version>3.0.3</version>
+				<version>3.0.4</version>
 				<exclusions>
 					<exclusion>
 						<groupId>commons-logging</groupId>
@@ -362,27 +357,27 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.5.12</version>
+				<version>1.5.16</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.5.12</version>
+				<version>1.5.16</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
 				<artifactId>freemarker</artifactId>
-				<version>2.3.33</version>
+				<version>2.3.34</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.116.Final</version>
+				<version>4.1.117.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
-				<version>3.5.17</version>
+				<version>3.5.19</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -477,7 +472,7 @@
 			<dependency>
 				<groupId>com.github.jsqlparser</groupId>
 				<artifactId>jsqlparser</artifactId>
-				<version>5.0</version>
+				<version>5.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.konghq</groupId>
@@ -593,7 +588,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-remote-resources-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.3.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -603,7 +598,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-invoker-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>3.9.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
