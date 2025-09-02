@@ -61,8 +61,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>2.0.5</shiro.version>
-		<spring.version>6.2.9</spring.version>
-		<spring.boot.version>3.4.8</spring.boot.version>
+		<spring.version>6.2.10</spring.version>
+		<spring.boot.version>3.4.9</spring.boot.version>
 		<spring.shell.version>3.4.0</spring.shell.version>
 		<log4j2.version>2.24.3</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
@@ -382,7 +382,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.123.Final</version>
+				<version>4.1.124.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
@@ -402,7 +402,7 @@
 			<dependency>
 				<groupId>com.mysql</groupId>
 				<artifactId>mysql-connector-j</artifactId>
-				<version>9.3.0</version>
+				<version>9.4.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
