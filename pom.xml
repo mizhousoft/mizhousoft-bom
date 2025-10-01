@@ -62,8 +62,8 @@
 
 		<shiro.version>2.0.5</shiro.version>
 		<spring.version>6.2.11</spring.version>
-		<spring.boot.version>3.4.10</spring.boot.version>
-		<spring.shell.version>3.4.0</spring.shell.version>
+		<spring.boot.version>3.5.6</spring.boot.version>
+		<spring.shell.version>3.4.1</spring.shell.version>
 		<log4j2.version>2.24.3</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
 	</properties>
@@ -142,7 +142,7 @@
 			<dependency>
 				<groupId>com.github.ben-manes.caffeine</groupId>
 				<artifactId>caffeine</artifactId>
-				<version>3.1.8</version>
+				<version>3.2.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
@@ -319,32 +319,32 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>2.18.4.1</version>
+				<version>2.19.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>2.18.4</version>
+				<version>2.19.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-annotations</artifactId>
-				<version>2.18.4</version>
+				<version>2.19.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.datatype</groupId>
 				<artifactId>jackson-datatype-jdk8</artifactId>
-				<version>2.18.4</version>
+				<version>2.19.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.datatype</groupId>
 				<artifactId>jackson-datatype-jsr310</artifactId>
-				<version>2.18.4</version>
+				<version>2.19.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.module</groupId>
 				<artifactId>jackson-module-parameter-names</artifactId>
-				<version>2.18.4</version>
+				<version>2.19.2</version>
 			</dependency>
 			<!-- JSP Managed Dependencies -->
 			<dependency>
@@ -397,7 +397,7 @@
 			<dependency>
 				<groupId>org.mybatis.spring.boot</groupId>
 				<artifactId>mybatis-spring-boot-starter</artifactId>
-				<version>3.0.4</version>
+				<version>3.0.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.mysql</groupId>
@@ -417,12 +417,12 @@
 			<dependency>
 				<groupId>org.quartz-scheduler</groupId>
 				<artifactId>quartz</artifactId>
-				<version>2.3.2</version>
+				<version>2.5.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.zaxxer</groupId>
 				<artifactId>HikariCP</artifactId>
-				<version>5.1.0</version>
+				<version>6.3.3</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.zxing</groupId>
@@ -452,22 +452,22 @@
 			<dependency>
 				<groupId>org.jsoup</groupId>
 				<artifactId>jsoup</artifactId>
-				<version>1.21.1</version>
+				<version>1.21.2</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-api</artifactId>
-				<version>0.12.6</version>
+				<version>0.13.0</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-impl</artifactId>
-				<version>0.12.6</version>
+				<version>0.13.0</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-jackson</artifactId>
-				<version>0.12.6</version>
+				<version>0.13.0</version>
 			</dependency>
 			<dependency>
 				<groupId>jakarta.annotation</groupId>
@@ -487,12 +487,12 @@
 			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
-				<version>4.5.0</version>
+				<version>4.5.1</version>
 			</dependency>
 		    <dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-modules-jackson</artifactId>
-				<version>4.5.0</version>
+				<version>4.5.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
@@ -597,43 +597,8 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-remote-resources-plugin</artifactId>
-					<version>3.3.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-shade-plugin</artifactId>
 					<version>3.6.1</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-invoker-plugin</artifactId>
-					<version>3.9.1</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-scm-plugin</artifactId>
-					<version>2.1.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-help-plugin</artifactId>
-					<version>3.5.1</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>2.10</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-docck-plugin</artifactId>
-					<version>1.2</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jxr-plugin</artifactId>
-					<version>3.6.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -650,21 +615,11 @@
 		        </plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>3.9.0</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-site-plugin</artifactId>
 					<version>3.21.0</version>
 					<configuration>
 						<locales>zh_CN</locales>
 					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>versions-maven-plugin</artifactId>
-					<version>2.18.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
@@ -677,8 +632,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.14.0</version>
+				<version>3.14.1</version>
 				<configuration>
+					<release>${maven.compiler.release}</release>
 					<encoding>${project.build.sourceEncoding}</encoding>
 					<showDeprecation>true</showDeprecation>
 					<showWarnings>true</showWarnings>
@@ -695,6 +651,8 @@
 					<archive>
 						<manifestEntries>
 							<Built-By>mizhousoft</Built-By>
+							<Build-Jdk-Spec>${maven.compiler.release}</Build-Jdk-Spec>
+							<Build-Jdk>${java.version}</Build-Jdk>
 						</manifestEntries>
 						<manifest>
 							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
@@ -721,6 +679,20 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.4.0</version>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Built-By>mizhousoft</Built-By>
+							<Build-Jdk-Spec>${maven.compiler.release}</Build-Jdk-Spec>
+							<Build-Jdk>${java.version}</Build-Jdk>
+						</manifestEntries>
+						<manifest>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<useUniqueVersions>false</useUniqueVersions>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -755,38 +727,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-			</plugin>
 		</plugins>
 	</build>
-
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.9.0</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>index</report>
-							<report>cim</report>
-							<report>dependencies</report>
-							<report>issue-tracking</report>
-							<report>mailing-list</report>
-							<report>plugin-management</report>
-							<report>plugins</report>
-							<report>summary</report>
-							<report>project-team</report>
-							<report>scm</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-		</plugins>
-	</reporting>
 
 	<profiles>
 		<profile>
@@ -823,7 +765,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.2.7</version>
+						<version>3.2.8</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
