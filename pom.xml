@@ -39,14 +39,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>mizhousoft-mizhousoft-release</id>
-			<name>release</name>
-			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/release/</url>
+			<id>gitea</id>
+			<url>https://git.mizhousoft.com/api/packages/mizhousoft/maven</url>
 		</repository>
 		<snapshotRepository>
-			<id>mizhousoft-mizhousoft-snapshot</id>
-			<name>snapshot</name>
-			<url>https://mizhousoft-maven.pkg.coding.net/repository/mizhousoft/snapshot/</url>
+			<id>gitea</id>
+			<url>https://git.mizhousoft.com/api/packages/mizhousoft/maven</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -61,8 +59,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>2.0.5</shiro.version>
-		<spring.version>6.2.11</spring.version>
-		<spring.boot.version>3.5.6</spring.boot.version>
+		<spring.version>6.2.12</spring.version>
+		<spring.boot.version>3.5.7</spring.boot.version>
 		<spring.shell.version>3.4.1</spring.shell.version>
 		<log4j2.version>2.24.3</log4j2.version>
 		<easyexcel.version>4.0.3</easyexcel.version>
@@ -367,12 +365,12 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.5.18</version>
+				<version>1.5.20</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.5.18</version>
+				<version>1.5.20</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
@@ -382,7 +380,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.127.Final</version>
+				<version>4.1.128.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
