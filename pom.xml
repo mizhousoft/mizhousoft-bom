@@ -59,10 +59,10 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>2.0.6</shiro.version>
-		<spring.version>7.0.1</spring.version>
-		<spring.boot.version>4.0.0</spring.boot.version>
+		<spring.version>7.0.2</spring.version>
+		<spring.boot.version>4.0.1</spring.boot.version>
 		<spring.shell.version>3.4.1</spring.shell.version>
-		<log4j2.version>2.25.2</log4j2.version>
+		<log4j2.version>2.25.3</log4j2.version>
 	</properties>
 
 	<dependencyManagement>
@@ -311,12 +311,12 @@
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>3.0.2</version>
+				<version>3.0.3</version>
 			</dependency>
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>3.0.2</version>
+				<version>3.0.3</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
@@ -354,22 +354,17 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.5.21</version>
+				<version>1.5.22</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.5.21</version>
+				<version>1.5.22</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
 				<artifactId>freemarker</artifactId>
 				<version>2.3.34</version>
-			</dependency>
-			<dependency>
-				<groupId>io.netty</groupId>
-				<artifactId>netty-all</artifactId>
-				<version>4.2.7.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
