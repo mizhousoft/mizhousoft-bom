@@ -59,8 +59,8 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>2.0.6</shiro.version>
-		<spring.version>7.0.2</spring.version>
-		<spring.boot.version>4.0.1</spring.boot.version>
+		<spring.version>7.0.3</spring.version>
+		<spring.boot.version>4.0.2</spring.boot.version>
 		<spring.shell.version>4.0.0</spring.shell.version>
 		<log4j2.version>2.25.3</log4j2.version>
 	</properties>
@@ -311,12 +311,12 @@
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>3.0.3</version>
+				<version>3.0.4</version>
 			</dependency>
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>3.0.3</version>
+				<version>3.0.4</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
@@ -354,12 +354,12 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.5.22</version>
+				<version>1.5.25</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.5.22</version>
+				<version>1.5.25</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
@@ -464,12 +464,12 @@
 			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
-				<version>4.7.0</version>
+				<version>4.7.4</version>
 			</dependency>
 		    <dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-modules-jackson</artifactId>
-				<version>4.7.0</version>
+				<version>4.7.4</version>
 			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
@@ -496,7 +496,7 @@
 			<dependency>
         		<groupId>org.junit.jupiter</groupId>
         		<artifactId>junit-jupiter</artifactId>
-        		<version>6.0.1</version>
+        		<version>6.0.2</version>
         		<scope>test</scope>
     		</dependency>
     		<dependency>
