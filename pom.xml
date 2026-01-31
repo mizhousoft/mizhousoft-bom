@@ -61,7 +61,7 @@
 		<shiro.version>2.0.6</shiro.version>
 		<spring.version>7.0.3</spring.version>
 		<spring.boot.version>4.0.2</spring.boot.version>
-		<spring.shell.version>4.0.0</spring.shell.version>
+		<spring.shell.version>4.0.1</spring.shell.version>
 		<log4j2.version>2.25.3</log4j2.version>
 	</properties>
 
