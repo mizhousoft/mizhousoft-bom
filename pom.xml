@@ -462,6 +462,11 @@
 				<version>5.3</version>
 			</dependency>
 			<dependency>
+				<groupId>com.github.librepdf</groupId>
+				<artifactId>openpdf</artifactId>
+				<version>3.0.3</version>
+			</dependency>
+			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
 				<version>4.7.4</version>
@@ -492,6 +497,11 @@
 				<artifactId>jaxb-impl</artifactId>
 				<version>2.3.2</version>
 			</dependency>
+		    <dependency>
+		      	<groupId>org.glassfish.jaxb</groupId>
+		      	<artifactId>jaxb-runtime</artifactId>
+		      	<version>2.3.2</version>
+		    </dependency>
 			<!-- Test Managed Dependencies -->
 			<dependency>
         		<groupId>org.junit.jupiter</groupId>
