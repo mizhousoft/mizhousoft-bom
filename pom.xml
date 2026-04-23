@@ -59,10 +59,10 @@
 		<maven.deploy.skip>false</maven.deploy.skip>
 
 		<shiro.version>2.1.0</shiro.version>
-		<spring.version>7.0.6</spring.version>
-		<spring.boot.version>4.0.5</spring.boot.version>
+		<spring.version>7.0.7</spring.version>
+		<spring.boot.version>4.0.6</spring.boot.version>
 		<spring.shell.version>4.0.1</spring.shell.version>
-		<log4j2.version>2.25.3</log4j2.version>
+		<log4j2.version>2.25.4</log4j2.version>
 	</properties>
 
 	<dependencyManagement>
@@ -311,12 +311,12 @@
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>3.1.1</version>
+				<version>3.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>3.1.1</version>
+				<version>3.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
@@ -384,7 +384,7 @@
 			<dependency>
 				<groupId>com.mysql</groupId>
 				<artifactId>mysql-connector-j</artifactId>
-				<version>9.6.0</version>
+				<version>9.7.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
@@ -416,10 +416,6 @@
 				<artifactId>poi-tl</artifactId>
 				<version>1.12.2</version>
 				<exclusions>
-					<exclusion>
-						<groupId>commons-logging</groupId>
-						<artifactId>commons-logging</artifactId>
-					</exclusion>
 					<exclusion>
 						<groupId>org.apache.poi</groupId>
 						<artifactId>poi-ooxml</artifactId>
