@@ -58,11 +58,11 @@
 
 		<maven.deploy.skip>false</maven.deploy.skip>
 
-		<shiro.version>2.2.0</shiro.version>
-		<spring.version>7.0.8</spring.version>
-		<spring.boot.version>4.0.7</spring.boot.version>
+		<shiro.version>2.2.1</shiro.version>
+		<spring.version>7.0.9</spring.version>
+		<spring.boot.version>4.0.8</spring.boot.version>
 		<spring.shell.version>4.0.3</spring.shell.version>
-		<log4j2.version>2.25.4</log4j2.version>
+		<log4j2.version>2.25.5</log4j2.version>
 	</properties>
 
 	<dependencyManagement>
@@ -305,12 +305,12 @@
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-core</artifactId>
-				<version>3.1.4</version>
+				<version>3.1.5</version>
 			</dependency>
 			<dependency>
 				<groupId>tools.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>3.1.4</version>
+				<version>3.1.5</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
@@ -348,12 +348,12 @@
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-core</artifactId>
-				<version>1.5.34</version>
+				<version>1.5.38</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>1.5.34</version>
+				<version>1.5.38</version>
 			</dependency>
 			<dependency>
 				<groupId>org.freemarker</groupId>
@@ -419,7 +419,7 @@
 			<dependency>
 				<groupId>org.jsoup</groupId>
 				<artifactId>jsoup</artifactId>
-				<version>1.21.2</version>
+				<version>1.22.2</version>
 			</dependency>
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
@@ -459,12 +459,12 @@
 			<dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-java-core</artifactId>
-				<version>4.10.0</version>
+				<version>4.10.1</version>
 			</dependency>
 		    <dependency>
 				<groupId>com.konghq</groupId>
 				<artifactId>unirest-modules-jackson</artifactId>
-				<version>4.10.0</version>
+				<version>4.10.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.eatthepath</groupId>
